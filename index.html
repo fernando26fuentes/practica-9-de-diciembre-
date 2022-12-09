@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script>
+
+        function funcion_nombre() {
+            var nom = document.getElementById("nom").value;
+            var apell = document.getElementById("apell").value;
+            alert ('Bienvenido'+' ' + nom +' '+ apell )
+        }
+    </script>
+</head>
+<body>
+    <h1 class="encab">Practica bloque 3</h1>
+    Introduce tu nombre: <input type="text" id="nom">
+    Introduce tu apellido 1 <input type="text" id="apell" onchange="funcion_nombre()">
+</body>
+</html>
